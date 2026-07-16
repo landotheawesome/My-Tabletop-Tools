@@ -44,11 +44,11 @@ function isHidden(hiding, aware) {
  */
 function doesStrikeHit(attack, ac) {
   // TODO
-//   if (attack >= ac) {
-//     return true;
-//   }
-//   return false;
-// }
+  if (attack >= ac) {
+    return true;
+  }
+  return false;
+}
 
 /**
  * A strike is a critical hit if the attack value is at least
@@ -59,11 +59,11 @@ function doesStrikeHit(attack, ac) {
  */
 function doesStrikeCrit(attack, ac) {
   // TODO
-//   if (attack >= ac + 10) {
-//     return true;
-//   }
-//   return false;
-// }
+  if (attack >= ac + 10) {
+    return true;
+  }
+  return false;
+}
 
 /**
  * A creature can restore hit points (HP) by healing,
