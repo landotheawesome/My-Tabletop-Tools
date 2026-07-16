@@ -146,14 +146,14 @@ function getCoverBonus(behindObstacle, takingCover) {
  */
 function getRemainingHp(maxHp, currentHp, damage) {
   // TODO
-//   if (damage >= maxHp * 2) {
-//     return -1;
-//   } else if (currentHp - damage == 0) {
-//     return 0;
-//   } else {
-//     return currentHp - damage;
-//   }
-// }
+  if (damage >= maxHp * 2) {
+    return -1;
+  } else if (currentHp - damage == 0) {
+    return 0;
+  } else {
+    return currentHp - damage;
+  }
+}
 
 /**
  * All creatures can see in bright light.
