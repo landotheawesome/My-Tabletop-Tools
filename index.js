@@ -27,13 +27,13 @@ function canCastSpell(isSpellPrepared, hasScroll) {
  */
 function isHidden(hiding, aware) {
   // TODO
-//   if (hiding === true || aware === false) {
-//     return true;
-//   }
-//   // else if(hiding === false || aware === true){
-//   return false;
-//   // }
-// }
+  if (hiding === true || aware === false) {
+    return true;
+  }
+  // else if(hiding === false || aware === true){
+  return false;
+  // }
+}
 
 /**
  * A strike hits if the attack value is greater than or equal
