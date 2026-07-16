@@ -123,14 +123,14 @@ function getProficiencyBonus(level, rank) {
  */
 function getCoverBonus(behindObstacle, takingCover) {
   // TODO
-//   if (behindObstacle === true) {
-//     return +2;
-//   }
-//   if (takingCover === true) {
-//     return +4;
-//   }
-//   return 0;
-// }
+  if (behindObstacle === true) {
+    return +2;
+  }
+  if (takingCover === true) {
+    return +4;
+  }
+  return 0;
+}
 
 /**
  * A creature's current hit points (HP) is reduced by taking damage.
