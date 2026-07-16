@@ -165,20 +165,20 @@ function getRemainingHp(maxHp, currentHp, damage) {
  */
 function canSee(light, vision) {
   // TODO
-//   if (light === "dark" && vision === "dark") {
-//     return true;
-//   } else if (light === "dim" && vision === "low-light") {
-//     return true;
-//   } else if (
-//     light === "dark" &&
-//     (vision === "low-light" || vision === "average")
-//   ) {
-//     return false;
-//   } else if (light === "dim" && vision === "average") {
-//     return false;
-//   }
-//   return true;
-// }
+  if (light === "dark" && vision === "dark") {
+    return true;
+  } else if (light === "dim" && vision === "low-light") {
+    return true;
+  } else if (
+    light === "dark" &&
+    (vision === "low-light" || vision === "average")
+  ) {
+    return false;
+  } else if (light === "dim" && vision === "average") {
+    return false;
+  }
+  return true;
+}
 
 /**
  * A strike deals damage if it hits, unless the strike is a critical hit,
