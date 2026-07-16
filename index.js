@@ -75,11 +75,11 @@ function doesStrikeCrit(attack, ac) {
  */
 function heal(maxHp, currentHp, healAmount) {
   // TODO
-//   if (maxHp > +healAmount + currentHp) {
-//     return true;
-//   }
-//   return false;
-// }
+  if (maxHp > +healAmount + currentHp) {
+    return true;
+  }
+  return false;
+}
 
 /**
  * When a character uses a skill they have proficiency in,
