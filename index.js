@@ -99,17 +99,17 @@ function heal(maxHp, currentHp, healAmount) {
  */
 function getProficiencyBonus(level, rank) {
   // TODO
-//   if (rank == "legendary") {
-//     return level + 8;
-//   } else if (rank == "master") {
-//     return level + 6;
-//   } else if (rank == "expert") {
-//     return level + 4;
-//   } else if (rank == "trained") {
-//     return level + 2;
-//   }
-//   return 0;
-// }
+  if (rank == "legendary") {
+    return level + 8;
+  } else if (rank == "master") {
+    return level + 6;
+  } else if (rank == "expert") {
+    return level + 4;
+  } else if (rank == "trained") {
+    return level + 2;
+  }
+  return 0;
+}
 
 /**
  * A creature can get a bonus to its armor class (AC) by taking cover.
